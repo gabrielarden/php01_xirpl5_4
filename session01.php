@@ -1,6 +1,7 @@
-<?php 
-    session_start();
+<?php
 
-    $_SESSION["nama"] = "Ahmad Solichin";
-    echo "<a href='session02.php'>Menuju ke halaman kedua</a>";
+session_start();
+
+$_SESSION['nama'] = "Muamar Zidan Tri Antoro";
+echo "<a href='session02.php'>Menuju Ke Halaman Kedua</a>";
 ?>

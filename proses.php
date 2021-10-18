@@ -1,19 +1,10 @@
 <?php
-if (isset($_GET['nama']) AND isset($_GET['email']))
-{
-    $nama =$_GET['nama'];
-    $email = $_GET['email'];
-}
-else
-{
-    echo "Maaf, anda harus mengakses halaman ini dari form.php<br><br>";
-}
-if (!empty($nama))
-{
-    echo "Nama: $nama <br /> Email: $email";
-}
-else
-{
-    die("Maaf, anda harus mengisi nama");
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // collect value of input field
+    $name = $_POST['nama'];
+    echo $name;
+    $alamat = $_POST['alamat'];
+    echo "<br>";
+    echo $alamat;
 }
 ?>
