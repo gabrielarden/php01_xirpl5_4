@@ -6,7 +6,7 @@
     <?php
     session_start();
 
-    $_SESSION['nama'] = "Rifdah Inas Nazhifah";
+    $_SESSION['nama'] = "Nur Aliya Fajri";
     echo "<a href='session02.php'>Menuju ke halaman kedua</a>";
     ?>
 </body>
